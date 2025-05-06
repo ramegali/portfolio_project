@@ -1,0 +1,257 @@
+/* Basic styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Navbar styles */
+nav ul {
+    display: flex; /* Visible by default */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Hamburger menu styles */
+.hamburger-menu {
+    display: none; /* Hidden by default for larger screens */
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: white;
+    background-color: #333;
+    text-align: center;
+    position: relative;
+    z-index: 1000; /* Ensure it stays above the navbar */
+}
+
+/* About Me section styles */
+#about-me {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    margin: 1rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Projects section styles */
+#projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+#projects ul li {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin: 0;
+    max-width: 300px;
+    flex: 1 1 calc(33.333% - 1.5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#projects ul li img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Skills section styles */
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#skills ul li {
+    position: relative;
+    padding-left: 2rem;
+    font-size: 1.1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#skills ul li::before {
+    content: "✔"; /* Example icon */
+    position: absolute;
+    left: 0.5rem;
+    color: #4CAF50;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Contact section styles */
+#contact {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    margin: 1rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    margin-bottom: 1rem;
+    }
+
+#contact p {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+#contact label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contact button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #45a049;
+}
+
+/* Error message styles */
+.error-message {
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+/* Responsive images and videos */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hidden by default on smaller screens */
+        flex-direction: column;
+        align-items: center;
+        background-color: #333;
+        position: absolute;
+        top: 3rem;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+    }
+
+    nav ul.visible {
+        display: flex; /* Show the menu when the 'visible' class is added */
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger menu on smaller screens */
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
+    }
+
+    /* Change hamburger icon to 'X' when menu is visible */
+    .hamburger-menu.active {
+        content: 'X';
+        font-size: 2rem;
+        color: white;
+        background-color: #333;
+    }
+
+    /* Projects section: Adjust layout */
+    #projects ul li {
+        flex: 1 1 100%;
+    }
+}
